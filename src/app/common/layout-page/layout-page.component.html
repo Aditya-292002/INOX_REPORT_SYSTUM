@@ -1,0 +1,129 @@
+<!-- <div class='layout-wrapper layout-content-navbar flex'>
+    <div class='layout-container'>
+      <aside id="layout-menu" class=" duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme"
+        [ngClass]="[ (isShowToggle == true) ? 'w-64' : 'w-20' ]">
+        <img src="../../../assets/images/sidebar/bxs-chevron-left.png" alt="" (click)="showToggleFun()"
+          [ngClass]="[ (isShowToggle == true) ? 'rotate-180' : '' ]"
+          class="absolute cursor-pointer rounded-full z-10  -right-3 top-4 w-10 border-8  border-f1eee9" />
+  
+        <div class="flex gap-x-4 justify-center item-center p-2 py-2">
+          <img src="assets/images/icons/complogo.jpg" alt="" class="origin-left h-20 cursor-pointer duration-300"
+            [ngClass]="[ (isShowToggle == true) ? '' : 'hidden' ]" />
+        </div>
+        <div class="mt-2">
+          <ul class="menu-inner py-1 ps scrollcontainer">
+            <li class="menu-item w-full">
+              <div class=" p-2" >
+                <span class="p-float-label ">
+                    <input pInputText  [(ngModel)]="SEARCH" class="w-full" (ngModelChange)="SearchFilter(SEARCH)" />
+                    <label for="float-label">Search</label>
+                </span>
+             </div>
+              <div class="menu-link">
+                <i class="menu-icon pi pi-home"></i>
+                <div class="text-truncate" (click)="dashboardClick()" data-i18n="Dashboards">
+                  <a>Dashboard</a>
+                </div>
+              </div>
+            </li>
+            <li *ngFor="let data of menuItemList;" class="menu-item w-full"
+            [ngClass]="[ data.IS_SUBSELECTED == true ? 'active' : '' ]">
+              <div class="menu-link" id="accordion" (click)="MainMenuClick(data.FUNCTION_CODE)">
+                <i class="menu-icon pi pi-folder-open" ></i>
+                <div class="flex-wrap justify-between w-full" >
+                  <div class="text-truncate flex justify-between" >
+                      <div><span>{{data.FUNCTION_NAME}}</span></div>
+                      <div [ngClass]="[ isShowToggle == false ? 'd-none' : '' ] ">
+                      <span class="arrow" [ngClass]="[ data.IS_SUBSELECTED == true ? 'active' : '' ]"><span></span><span></span></span></div>
+                  </div>
+                </div>
+              </div>
+            <ul *ngIf="data.IS_SUBSELECTED" >
+                <li *ngFor="let item of data.items;" [ngClass]="[ item.IS_SUBSELECTED == true ? 'active' : '' ]"
+                  (click)="subMenuClick(item)">
+                  <div class="menu-link submenu" >
+                     <div class="mr-2">o </div>
+                    <div class="flex flex-wrap justify-between w-full" >
+                      <div class="text-truncate" >
+                        {{item.FUNCTION_NAME}}
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="layout-page duration-300" [ngClass]="[ (isShowToggle == true) ? ' ' : 'left-container' ]">
+        <nav class="layout-navbar navbar navbar-expand-xl navbar-detached
+           align-items-center bg-navbar-theme container-fluid">
+          <div class='navbar-nav-right flex align-items-center'>
+            <div class='navbar-nav align-items-center w-80 '>
+              <h6>{{headerName}}</h6>
+            </div>
+            <div class="navbar-nav flex-row align-items-center ms-auto">
+              <div class="w-10 h-10 justify-center items-start gap-2.5 inline-flex">
+                <div class=" hide-arrow">
+                  <div class="avatar avatar-online" (click)="op.toggle($event)">
+                    <i class="pi pi-user w-px-40 h-auto rounded-circle"></i>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p-overlayPanel #op>
+            <ng-template pTemplate>
+              <ul class="">
+                <li class='py-2 '>
+                  <div class="flex">
+                    <div class="shrink-0 me-3">
+                      <div class=" hide-arrow">
+                        <div class="avatar avatar-online">
+                          <i class="pi pi-user w-px-40 h-auto rounded-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grow">
+                      <span class="block Table_Header Text_Primary">
+                        {{USER_NAME}}
+                      </span>
+                      <small class="text-muted Helper_Text">System Admin</small>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li class='py-2 cursor-pointer'>
+                  <button class="dropdown-item" (click)="signOut()">
+                    <i class="pi pi-sign-out me-2"></i>
+                    <span class="align-middle Table_Header">Logout</span>
+                  </button>
+                </li>
+              </ul>
+            </ng-template>
+          </p-overlayPanel>
+        </nav>
+
+        <div class="content-wrapper">
+          <div class='grow px-7 py-2 w-full'>
+            <router-outlet></router-outlet>
+          </div>
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="flex flex-wrap justify-between py-2 px-6 flex-md-row flex-column ">
+              <div class="mb-2 mb-md-0">
+                <span class='Text_Secondary'>Copyright © 2024 <a class="footer-link Text_Main font-medium">INOX India
+                    Limited,</a> </span>
+              </div>
+              <div class="d-none d-lg-inline-block">
+                <a class="footer-link Text_Main me-4">Privacy Policy</a>
+                <a class="footer-link Text_Main">Terms and Conditions</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div> -->
