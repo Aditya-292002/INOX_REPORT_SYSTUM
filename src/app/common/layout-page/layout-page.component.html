@@ -1,4 +1,4 @@
-<div class='layout-wrapper layout-content-navbar flex'>
+<!-- <div class='layout-wrapper layout-content-navbar flex'>
     <div class='layout-container'>
       <aside id="layout-menu" class=" duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme"
         [ngClass]="[ (isShowToggle == true) ? 'w-64' : 'w-20' ]">
@@ -29,7 +29,6 @@
             <li *ngFor="let data of menuItemList;" class="menu-item w-full"
             [ngClass]="[ data.IS_SUBSELECTED == true ? 'active' : '' ]">
               <div class="menu-link" id="accordion" (click)="MainMenuClick(data.FUNCTION_CODE)">
-                <!-- <i class="menu-icon pi {{data.ICON}}"></i> -->
                 <i class="menu-icon pi pi-folder-open" ></i>
                 <div class="flex-wrap justify-between w-full" >
                   <div class="text-truncate flex justify-between" >
@@ -39,13 +38,10 @@
                   </div>
                 </div>
               </div>
-              <!-- <i class="menu-icon pi {{item.ICON}}" [ngClass]="[ (isShowToggle == true) ? '' : 'hidden' ]"></i> -->
-              <ul *ngIf="data.IS_SUBSELECTED" >
+            <ul *ngIf="data.IS_SUBSELECTED" >
                 <li *ngFor="let item of data.items;" [ngClass]="[ item.IS_SUBSELECTED == true ? 'active' : '' ]"
                   (click)="subMenuClick(item)">
                   <div class="menu-link submenu" >
-                    <!-- <i class="menu-icon pi pi-file"></i> -->
-                    <!-- <i class="menu-icon pi pi-minus"></i> -->
                      <div class="mr-2">o </div>
                     <div class="flex flex-wrap justify-between w-full" >
                       <div class="text-truncate" >
@@ -60,8 +56,6 @@
         </div>
       </aside>
       <div class="layout-page duration-300" [ngClass]="[ (isShowToggle == true) ? ' ' : 'left-container' ]">
-        <!-- <div class={`layout-page ${!isNavBar ? "left-container duration-300" : "duration-300"}`}> -->
-        <!-- Top Navbar section -->
         <nav class="layout-navbar navbar navbar-expand-xl navbar-detached
            align-items-center bg-navbar-theme container-fluid">
           <div class='navbar-nav-right flex align-items-center'>
@@ -70,7 +64,6 @@
             </div>
             <div class="navbar-nav flex-row align-items-center ms-auto">
               <div class="w-10 h-10 justify-center items-start gap-2.5 inline-flex">
-                <!-- <div class=" hide-arrow" onClick={(e) => op.current.toggle(e)}> -->
                 <div class=" hide-arrow">
                   <div class="avatar avatar-online" (click)="op.toggle($event)">
                     <i class="pi pi-user w-px-40 h-auto rounded-circle"></i>
@@ -112,15 +105,12 @@
               </ul>
             </ng-template>
           </p-overlayPanel>
-  
         </nav>
-        <!-- middel section -->
-  
+
         <div class="content-wrapper">
           <div class='grow px-7 py-2 w-full'>
             <router-outlet></router-outlet>
           </div>
-          <!-- footer section -->
           <footer class="content-footer footer bg-footer-theme">
             <div class="flex flex-wrap justify-between py-2 px-6 flex-md-row flex-column ">
               <div class="mb-2 mb-md-0">
@@ -136,4 +126,4 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
