@@ -1,0 +1,124 @@
+<div>
+    <p-card header="{{this.DESCRIPTION}}" >
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid-cols-8" *ngIf="this.CHECK_1 != null && this.CHECK_1 != '' || this.CHECK_2 != null && this.CHECK_2 != ''
+            || this.CHECK_3 != null && this.CHECK_3 != '' || this.CHECK_4 != null && this.CHECK_4 != ''">
+                <div class="flex flex-wrap gap-3 ">
+                    <div class="flex align-items-center" *ngIf="this.CHECK_1 != null && this.CHECK_1 != ''">
+                        <p-checkbox [(ngModel)]="CHECK_1_VALUE" [binary]="true"/>
+                        <label for="CHECK_1" class="ml-2">{{CHECK_1}}</label>
+                    </div>
+                    <div class="flex align-items-center" *ngIf="this.CHECK_2 != null && this.CHECK_2 != ''">
+                        <p-checkbox [(ngModel)]="CHECK_2_VALUE" [binary]="true"/>
+                        <label for="CHECK_2" class="ml-2">{{CHECK_2}}</label>
+                    </div>
+                    <div class="flex align-items-center" *ngIf="this.CHECK_3 != null && this.CHECK_3 != ''">
+                        <p-checkbox [(ngModel)]="CHECK_3_VALUE" [binary]="true"/>
+                        <label for="CHECK_3" class="ml-2">{{CHECK_3}}</label>
+                    </div>
+                    <div class="flex align-items-center" *ngIf="this.CHECK_4 != null && this.CHECK_4 != ''">
+                        <p-checkbox [(ngModel)]="CHECK_4_VALUE" [binary]="true"/>
+                        <label for="CHECK_4" class="ml-2">{{CHECK_4}}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-4" *ngIf="this.OPTION_1 != null && this.OPTION_1 != '' || this.OPTION_2 != null && this.OPTION_2 != ''">
+                <div class="flex items-center" >
+                    <p-radioButton name="group" value="1" [(ngModel)]="OPTION"></p-radioButton>
+                    <label for="OPTION1" class="ml-2">{{OPTION_1}}</label>
+                </div>
+                
+                <div class="flex items-center">
+                    <p-radioButton name="group" value="2" [(ngModel)]="OPTION"></p-radioButton>
+                    <label for="OPTION2" class="ml-2">{{OPTION_2}}</label>
+                </div>
+            </div>
+            <div *ngIf="this.DATE_1 != null && this.DATE_1 != ''" >
+                <span class="p-float-label mt-3"> 
+                    <p-calendar  [(ngModel)]="FORM_DATE" [showTime]="false" dateFormat="dd-MM-yy" appendTo="body"></p-calendar>
+                    <label for="float-label">{{DATE_1}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div *ngIf="this.DATE_2 != null && this.DATE_2 != ''" >
+                <span class="p-float-label mt-3"> 
+                    <p-calendar  [(ngModel)]="TO_DATE" [showTime]="false" dateFormat="dd-MM-yy" appendTo="body"></p-calendar>
+                    <label for="float-label">{{DATE_2}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div *ngIf="this.UCCONTROL_1 != null && this.UCCONTROL_1 != ''">   
+                <span class="p-float-label mt-2" >
+                    <p-dropdown [options]="UCCONTROL_1_LIST"  
+                    [(ngModel)]="UC1_SEARCHID" class="w-full" placeholder="Select"
+                    [filter]="true" filterBy="UC1_SEARCHID"  optionLabel="UC1_SEARCHID" optionValue="UC1_SEARCHID" inputId="float-label" ></p-dropdown>
+                    <label htmlFor="UC1_SEARCHID">{{UCCONTROL_1}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div *ngIf="this.UCCONTROL_2 != null && this.UCCONTROL_2 != ''">   
+                <span class="p-float-label mt-2" >
+                    <p-dropdown [options]="UCCONTROL_2_LIST"  
+                    [(ngModel)]="UC2_SEARCHID" class="w-full" placeholder="Select"
+                    [filter]="true" filterBy="UC2_SEARCHID"  optionLabel="UC2_SEARCHID" optionValue="UC2_SEARCHID" inputId="float-label" ></p-dropdown>
+                    <label htmlFor="UC2_SEARCHID">{{UCCONTROL_2}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div *ngIf="this.UCCONTROL_3 != null && this.UCCONTROL_3 != ''">   
+                <span class="p-float-label mt-2" >
+                    <p-dropdown [options]="UCCONTROL_3_LIST"  
+                    [(ngModel)]="UC3_SEARCHID" class="w-full" placeholder="Select"
+                    [filter]="true" filterBy="UC3_SEARCHID"  optionLabel="UC3_SEARCHID" optionValue="UC3_SEARCHID" inputId="float-label" ></p-dropdown>
+                    <label htmlFor="UC3_SEARCHID">{{UCCONTROL_3}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div *ngIf="this.UCCONTROL_4 != null && this.UCCONTROL_4 != ''">   
+                <span class="p-float-label mt-2" >
+                    <p-dropdown [options]="UCCONTROL_4_LIST"  
+                    [(ngModel)]="UC4_SEARCHID" class="w-full" placeholder="Select"
+                    [filter]="true" filterBy="UC4_SEARCHID"  optionLabel="UC4_SEARCHID" optionValue="UC4_SEARCHID" inputId="float-label" ></p-dropdown>
+                    <label htmlFor="UC4_SEARCHID">{{UCCONTROL_4}}<b class="text-red-500">*</b></label>
+                </span>
+            </div>
+            <div class="buttonContainerNew mt-1">
+                <p-button label="Show" class="" icon="pi pi-eye" (click)="GETREPORTLIST()" />
+            </div>              
+        </div>
+    </p-card>
+</div>
+
+
+<!-- <div class="mt-2" *ngIf="this.isList">
+    <p-card header="">
+      <div style="display: flex;justify-content: end;gap: 5px;"> 
+        <div class="mb-2" >
+          <button class="ExcelDownload" ><i class="pi pi-file-excel" (click)="exportToExcel()"></i></button>
+       </div>
+       <div class="mb-2" >
+          <span class="p-float-label ">
+              <input pInputText  [(ngModel)]="SEARCH" class="w-full" (ngModelChange)="SearchFilter(SEARCH)" />
+              <label for="float-label">Search</label>
+          </span>
+       </div>
+      </div>
+    <dx-data-grid
+    id="gridContainer"
+    [dataSource]="REPORT_DATA_LIST"
+    keyExpr="ID"
+    [remoteOperations]="false"
+  [allowColumnReordering]="true"
+  [rowAlternationEnabled]="true"
+  [showBorders]="true"
+  >
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-pager
+      [allowedPageSizes]="[10, 20]"
+      [showPageSizeSelector]="true"
+      [showNavigationButtons]="true"
+    >
+    </dxo-pager>
+    <dxi-column *ngFor="let column of dynamicColumns"  [dataField]="column.field" [caption]="column.caption" 
+       [width]="column.width" >
+      <dxo-lookup *ngIf="column.lookup" [dataSource]="column.lookup.dataSource" valueExpr="ID" displayExpr="Name">
+      </dxo-lookup>
+    </dxi-column>
+  </dx-data-grid>
+    </p-card>
+</div>   -->

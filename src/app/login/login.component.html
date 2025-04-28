@@ -1,0 +1,35 @@
+<div class="login-background">
+    <div class="login-container">
+        <div class="p-5 ">
+            <div class="row">
+                <div class="form-wrapper">
+                    <div class="col-md-12 login-box">
+                        <img src="assets/images/icons/complogo.jpg" alt="" >
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-2">
+                          <label >Username</label>
+                          <input type="text" class="form-control" [(ngModel)]="USERNAME" [ngModelOptions]="{standalone : true}" placeholder="Enter Username" >
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-2">
+                          <label >Password</label>
+                          <input type="password" class="form-control" [(ngModel)]="PASSWORD" [ngModelOptions]="{standalone : true}"  placeholder="Enter Password" >
+                        </div>
+                    </div>
+ 
+                    <div class="col-md-12">
+                        <div class="mb-2">
+                          <label [hidden]="labelShow" class="label_display">{{labelText}}</label>
+                   </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-4 mt-5" (window:keypress)="onSomeAction($event)" (click)="logIn()">LOG IN</button>
+                    <div class="copyright mt-2">
+                        <p class="terms text-center">© Comflex Technologies Pvt. Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
