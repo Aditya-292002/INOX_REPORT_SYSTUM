@@ -1,0 +1,105 @@
+/* toggle css */
+.showSidebar{
+  padding-left: 15rem;
+}
+
+
+
+/* header toggle btn css */
+.toggle-button button,
+.toggle-button button:hover{
+    color: #fff !important;
+    padding: 0.75rem 1.25rem;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+}
+.toggle-button button .pi{
+  font-size: 1.2rem!important;
+}
+/* sidebar menu css */
+
+.p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action {
+  color: #575757 !important;
+  font-weight: 400 !important;
+  padding: 0.75rem 1rem !important;
+}
+.p-sidebar-content .p-component {
+  font-size: 14px !important;
+  font-family: 'Poppins', sans-serif !important;
+  width: 100%;
+}
+.p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
+  border: 1px solid transparent !important;
+  color: #6c757d;
+  background: transparent !important;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+}
+.p-panelmenu-panel .p-icon {
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+}
+
+/* sidebar css */
+.sidenav .navbar-brand {
+  padding: 1.5rem;
+}
+.navbar-vertical .navbar-brand-img, .navbar-vertical .navbar-brand>svg {
+  max-width: 100%;
+  max-height: 18px;
+  width: 100%;
+}
+.navbar-vertical.navbar-expand-xs {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 240px;
+  overflow-y: auto;
+  z-index: 2;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-vertical.navbar-collapse{
+  max-width: 0px !important;
+}
+.navbar-vertical.navbar-expand-xs.fixed-left {
+  left: 0;
+  border-width: 0 1px 0 0;
+}
+.navbar-vertical.navbar-light {
+  border-color: rgba(0,0,0,.05);
+}
+
+.navbar-vertical.navbar-expand-xs .navbar-inner {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.p-menuitem-link-active{
+  background-color: #3b82f626 !important;
+    border-left: 2px solid var(--indigo-700);
+}
+
+.navbar-inner {
+  height: 560px;
+  overflow-y: auto;
+}
+
+/* scrollbar css */
+.navbar-inner::-webkit-scrollbar {
+  width: 6px;
+}
+ 
+.navbar-inner::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.navbar-inner::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #3b82f626;
+  border-radius: 5px;
+height: 12px;
+}

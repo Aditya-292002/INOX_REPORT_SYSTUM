@@ -1,0 +1,11 @@
+.p-dialog-header,
+.p-dialog-content{
+    padding: 0 !important;
+}
+.p-dialog{
+    padding: 10px !important;
+}
+.p-dialog-close-button{
+    width: 20px !important;
+    height: 20px !important;
+}

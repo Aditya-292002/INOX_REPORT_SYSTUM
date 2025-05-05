@@ -1,0 +1,47 @@
+.p-carousel .p-carousel-indicators {
+  padding: 10px !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top:91% !important;
+  z-index: 2 !important;
+}
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+  width: 3rem !important;
+  height: 3rem !important;
+
+}
+.p-carousel-prev{
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  top: 50% !important;
+  z-index: 1 !important;
+  display: flex !important;
+ color: #e9ecef  !important;
+
+}
+
+.p-carousel-next{
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  top: 50% !important;
+  z-index: 1 !important;
+  display: flex !important;
+  color: #e9ecef  !important;
+
+}
+.p-carousel .p-carousel-content .p-carousel-prev:enabled:hover, .p-carousel .p-carousel-content .p-carousel-next:enabled:hover {
+  color: #343a40 !important;
+}
+.carousel-prev-icon .p-icon{
+  width: 1.5rem  !important;
+  height: 1.5rem  !important;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  width: 34px !important;
+  height: 4px !important;
+
+}

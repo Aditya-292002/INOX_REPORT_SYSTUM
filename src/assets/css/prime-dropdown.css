@@ -1,0 +1,52 @@
+.p-dropdown {
+    border: 1px solid #ced4da;
+    border-radius: 4px !important;
+    height: 30px;
+    border: 1px solid #babdc1 !important;
+}
+.p-dropdown.p-component,
+.p-multiselect.p-component,
+.p-inputtextarea.p-component  {
+    width: 100%;
+    border: 1px solid #ced4da !important;
+}
+.p-component  {
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    padding: 0.35rem 1.25rem !important;
+    white-space: normal !important;
+    width: auto;
+    max-width: 500px;
+}
+.p-icon {
+    width: 0.6rem !important;
+    height: 0.6rem !important;
+}
+.p-dropdown-filter-icon {
+    margin-top: -0.3rem !important;
+}  
+.p-dropdown-clear-icon {
+    margin-top: -0.3rem !important;
+}    
+/* multiselect css */
+.p-multiselect {
+    border-radius: 4px !important;
+    height: 30px;
+    border: 1px solid #babdc1 !important;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item {
+    padding: 0.35rem 1.25rem !important;
+}
+.p-multiselect .p-multiselect-label {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif !important;
+}
+.p-dropdown .p-overlay {
+    z-index: 1 !important; 
+}
+
+ 

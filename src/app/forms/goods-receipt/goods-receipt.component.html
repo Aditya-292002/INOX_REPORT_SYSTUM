@@ -1,0 +1,17 @@
+<div class="mb-2">
+    <p-card>
+        <div class="flex flex-row items-center gap-2 justify-between">
+            <h4 class="page-header-text">Goods Receipt</h4>
+        </div>
+    </p-card>
+</div>
+<div>
+    <p-card class="h-full">
+        <div class="grid grid-cols-1 gap-y-1" *ngFor="let category of categories">
+            <div  class="field-checkbox">
+                <p-radiobutton [inputId]="category.key" [value]="category" [ngModel]="selectedCategory" />
+                <label [for]="category.key" class="ml-2 input-header-label">{{ category.name }}</label>
+            </div>
+        </div>
+    </p-card>
+</div>

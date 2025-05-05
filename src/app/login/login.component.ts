@@ -8,18 +8,19 @@ import { API_URLService } from '../services/api-url.service';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-login',
-  imports: [CommonModule,BrowserModule,FormsModule],
+  imports: [CommonModule,FormsModule,InputTextModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
   
   USERNAME:any;
-  PASSWORD:any;
-  USER_ID:any;
+  PASSWORD:any = "";
+  USER_ID:any = "";
   EMPLOYEENAME:any;
   labelShow:any;
   labelText:any;
@@ -31,6 +32,12 @@ export class LoginComponent {
     private sharedService: SharedService,
     private activeRoute: ActivatedRoute,
     private url: API_URLService){ }
+
+    ngOnInit(): void {
+      localStorage.removeItem("EMPLOYEENAME")
+      localStorage.removeItem("EMPLOYEEID")
+      localStorage.removeItem("IDLE_TIME")
+    }
 
   onSomeAction(e:any){
     if(e.code=="Enter"){
@@ -56,7 +63,8 @@ export class LoginComponent {
         localStorage.setItem("IDLE_TIME",res.IDLE_TIME)
         this.USER_ID =localStorage.getItem("EMPLOYEEID");
         this.EMPLOYEENAME =localStorage.getItem("EMPLOYEENAME");
-        this.router.navigate(['/Dashboard']);
+        // this.router.navigate(['/Dashboard']);
+        this.router.navigate(['/Gateentry']);
       }
     }
   );
