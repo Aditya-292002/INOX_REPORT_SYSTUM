@@ -1,0 +1,87 @@
+.p-inputtext {
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: #334155 !important;
+    padding: 0.3rem 0.5rem !important;
+    border-radius: 2px !important;
+    border: 1px solid #94a3b8 !important;
+    width: 100%;
+}
+.p-inputtext:enabled:focus {
+    border-color: #94a3b8 !important;
+}
+
+
+
+.p-datepicker {
+    width: 100%;
+
+}
+.p-datepicker-input-icon-container .p-icon,
+.p-datepicker-input-icon-container .pi {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+}
+
+.p-datepicker-select-month ,
+.p-datepicker-select-year,
+.p-datepicker-weekday-cell {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: #47556e;
+}
+.p-datepicker-day-cell{
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: #47556e;
+}
+
+.p-datepicker-today > .p-datepicker-day-selected {
+    background: #101828 !important;
+    color: #fff !important;
+}
+
+.p-datepicker-day {
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.p-datepicker-time-picker span,
+.p-datepicker-time-picker .p-button-icon-only {
+    font-size: 12px !important;
+}
+.model-button .p-button-outlined{
+    /* border: 1px solid #47556e !important; */
+    height: 20px !important;
+    width: 20px !important;
+}
+.p-button-icon{
+    font-size: 12px !important;
+}
+
+/* .SearchFilter .p-iconfield {
+    border: 1px solid #fff;
+    border-radius: 4px;
+} */
+
+.SearchFilter .p-iconfield .p-inputicon{
+    font-size: 12px !important;
+    margin-top: -6px;
+}
+.SearchFilter .p-iconfield .sidebarSearch{
+    color: #fff !important;
+    font-size: 12px !important;
+    padding-left: 35px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}

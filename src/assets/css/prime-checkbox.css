@@ -1,0 +1,140 @@
+.p-checkbox .p-checkbox-box {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 4px !important;
+}
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #31499f !important;
+    background: #31499f !important;
+}
+
+/* button css */
+.iconModalBtn .p-button{
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    padding: 2px 2px !important;
+    border-radius: 50%;
+    border-color: #31499f !important;
+    background: #31499f !important;
+    text-align: end;
+    align-items: center;
+    position: static !important;
+    margin-left: auto;
+}
+.iconModalBtn .p-button .pi{
+    font-size: 10px !important;
+}
+.iconBtn button{
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    padding: 2px 2px !important;
+    border-color: #31499f !important;
+    background: #31499f !important;
+    text-align: end;
+    align-items: center;
+    margin-left: auto;
+}
+.iconBtn button .pi{
+    font-size: 12px !important;
+}
+.p-button-label {
+    font-weight: 400 !important;
+}
+.buttonContainer .p-button {
+    color: #fff;
+    background: transparent !important;
+    border: 1px solid #FFF !important;
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    width: auto;
+    font-weight: 400;
+    margin-right: 12px !important;
+    margin-bottom: 12px;
+}
+.buttonContainerNew .p-button {
+    color: #FFF !important;
+    /* background: #082f49 !important; */
+    background:  #0989f3 !important;
+    border: 1px solid #FFF !important;
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    width: auto;
+    font-weight: 400;
+    /* margin-right: 12px !important;
+    margin-bottom: 12px; */
+}
+.p-button:focus {
+    box-shadow: none !important;
+}
+
+.headingBtn .p-button {
+    color: #fff;
+    background: transparent !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    width: auto;
+   
+}
+.headingBtn .p-button .pi{
+    font-size: 16px !important;
+}
+
+.dashboardCardbtn .p-button{
+    background: #7764e4;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px !important;
+}
+.settingCardbtn .p-button{
+    background: #1d4ed8;
+    padding: 5px 10px;
+    font-size: 12px !important;
+    text-align: center;
+    display: block !important;
+    font-weight: 400 !important;
+}
+
+.p-selectbutton .p-button {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+}
+.p-selectbutton .p-button.p-highlight {
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
+}
+   
+
+
+/* braedcrum css */
+.p-breadcrumb {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.p-breadcrumb .p-breadcrumb-list li .p-menuitem-link .p-menuitem-icon,
+.p-breadcrumb .p-breadcrumb-list li:last-child .p-menuitem-text {
+    color: #f6f9fc !important;
+    font-size: .875rem !important;
+    font-weight: 600;
+}
+
+/* tab css */
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+   
+    border-width: 0 0 2px 0 !important;
+   
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    margin: 0 !important;
+}
+.p-tabview-nav-content {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    width: 100%;
+}
+.p-tabview-nav {
+    overflow-y: auto !important;
+    width: 100% !important;
+}

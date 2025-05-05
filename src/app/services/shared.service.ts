@@ -16,6 +16,9 @@ export class SharedService {
   constructor( private http: HttpClient) {
   }
 
+  updateData(data: any) {
+    this.FUNCTION_CODE.next(data);
+  }
 
   isValid(inputValue:any){
     if(inputValue == '' || inputValue == null || inputValue == undefined || inputValue == 'undefined'){

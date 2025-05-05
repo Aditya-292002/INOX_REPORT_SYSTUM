@@ -1,0 +1,31 @@
+.login-background {
+    background: url(../../assets/images/Common/business-people.jpg) no-repeat left 16%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* z-index: 1; */
+ 
+ 
+}
+ 
+.login-background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(93,84,240,.5); */
+    background-image: linear-gradient(358deg, #0c4382cc 29%, #006bb761 50%, #0c438282 70%);
+    pointer-events: none;
+}
+ 
+.login-container {
+    height: 100vh;
+    width: 100%;
+}

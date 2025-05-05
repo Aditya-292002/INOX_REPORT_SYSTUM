@@ -1,0 +1,316 @@
+<div class="mb-2">
+    <p-card>
+        <div class="flex flex-row items-center gap-2 justify-between">
+            <h4 class="page-header-text">Gate Pass Entry</h4>
+            <div class="flex gap-2">
+                <p-button class="save-button prime-button" label="Save" />
+                <p-button class="action-button prime-button" label="Cancel" />
+                <p-button class="action-button prime-button" label="List" />
+            </div>
+        </div>
+    </p-card>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-x-2 gap-y-2">
+    <div class="col-span-3">
+        <p-card class="h-full">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-x-2 gap-y-1">
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Employee id</label>
+                        <!-- <input pInputText id="" class="input-form-control " [(ngModel)]="EMP_ID" /> -->
+                        <input pInputText id=""  [(ngModel)]="EMP_ID" class="input-form-control EmployeeIdHover" (focus)="isViewIcon = true"/>
+                         <div class="flex gap-2 col-span-2" *ngIf="isViewIcon">
+                            <p-button class="model-button" (click)="showCommonDialog()" icon="pi pi-download" [rounded]="true" [outlined]="true" />
+                            <label for="" *ngIf="isShowDescription" class="input-header-label mt-2" >{{this.setSelectedDetails.name}}</label>
+                            <!-- <label for="" title="Modify the JSON structure so that ACTIVE can toggle the submenu visibility dynamically.Modify the JSON structure so that ACTIVE can toggle the submenu
+                            visibility dynamically." class="input-header-label truncate mt-2" >
+                           Modify the JSON structure so that ACTIVE can toggle the submenu visibility dynamically.
+                            </label> -->
+                         </div>
+                         
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Doc Date</label>
+                        <p-datepicker  class="input-form-control w-[130px]" [(ngModel)]="date" dateFormat="dd-MM-yy" 
+                        [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay"  />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                                <label for="" class="input-header-label" >Doc Type :5C-M</label>
+                                <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        
+                        <input pInputText id="" class="input-form-control" />
+                      
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Entry Time</label>
+                        <p-datepicker [(ngModel)]="date" class="input-form-control w-full" [iconDisplay]="'input'" [showIcon]="true" [timeOnly]="true" inputId="templatedisplay">
+                            <ng-template #inputicon let-clickCallBack="clickCallBack">
+                                <i class="pi pi-clock" (click)="clickCallBack($event)"></i>
+                            </ng-template>
+                        </p-datepicker>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Customer :20C-M</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control " />
+                      
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label w-1/3 col-span-2" >PO No</label>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Vendor :10C-M</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control " />
+                       
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between col-span-2" >
+                            <label for="" class="input-header-label" >Gate Entry Type </label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Challan No</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Name of Emp. Who Reqd. this goods</label>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Challan Date</label>
+                        <p-datepicker  class="input-form-control w-[130px]" [(ngModel)]="date" dateFormat="dd-MM-yy" 
+                        [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay"  />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >LR No. and Docket No.</label>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Invoice No</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Amt as per LR Docket</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Invoice Date</label>
+                        <p-datepicker  class="input-form-control w-[130px]" [(ngModel)]="date" dateFormat="dd-MM-yy" 
+                        [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay"  />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >PROJECT CODE F4</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Truck No.</label>
+                        <input pInputText id="" class="input-form-control" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Basic Bill Amt</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Transporter</label>
+                        <input pInputText id="" class="input-form-control" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Remark</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label" >Delivery Person</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between col-span-2" >
+                            <label for="" class="input-header-label" >Mode of Transport </label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >No of Packets </label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Remarks</label>
+                        <input pInputText id="" class="input-form-control col-span-2" />
+                    </div>
+                </div>
+               <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Gross Bill Amt</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-4 gap-x-2">
+                        <label for="" class="input-header-label col-span-2" >Weight in KG as per LR</label>
+                        <input pInputText id="" class="input-form-control " />
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div>
+        <p-card class="h-full">
+            <div class="grid grid-cols-1 gap-y-1">
+                <div>
+                    <label for="" class="card-header-label mb-2" >Weight Entry Details </label>
+                </div>
+                <div >
+                    <div class="grid grid-cols-2 gap-y-1">
+                        <label for="" class="input-header-label" >Slip No. :25C</label>
+                        <input pInputText id="" class="input-form-control" />
+                    </div>
+                </div>
+                <div >
+                    <div class="grid grid-cols-2 gap-y-1">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Gross Weight: -M</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control" placeholder="0"/>
+                    </div>
+                </div>
+                <div >
+                    <div class="grid grid-cols-2 gap-y-1">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Tare Weight: -M</label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control" placeholder="0"/>
+                    </div>
+                </div>
+                <div >
+                    <div class="grid grid-cols-2 gap-y-1">
+                        <div class="flex justify-between" >
+                            <label for="" class="input-header-label" >Net Weight: -M </label>
+                            <b class="text-red-600 input-header-label">*</b>
+                        </div>
+                        <input pInputText id="" class="input-form-control" placeholder="0"/>
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <!-- <div class="col-span-4 ">
+        <p-card>
+            <p-table [columns]="cols" [value]="products" #dt2  showGridlines>
+                <ng-template #header let-columns>
+                    <tr>
+                        <th *ngFor="let col of columns" [ngClass]="" pSortableColumn="{{col.field}}" >
+                            {{ col.header }}
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template #body let-rowData let-columns="columns">
+                    <tr>
+                        <td *ngFor="let col of columns" 
+                        [ngClass]="[ (col.field === 'code') ? 'text-blue-800 cursor-pointer' : '' ]"
+                        (click)="onCellClick(rowData, columns)">
+                            {{ rowData[col.field] }}
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-card>
+    </div> -->
+</div>
+
+<!-- Common Dialog Box -->
+<p-dialog header="" [modal]="true" [(visible)]="visible" [style]="{ width: '900px' }">
+    <div class="  mb-4" >
+        <p-iconfield iconPosition="right">
+            <p-inputicon styleClass="pi pi-search" />
+            <input type="text" [(ngModel)]="SEARCH" pInputText (ngModelChange)="SearchFilter(SEARCH)" placeholder="Search" />
+        </p-iconfield>
+     </div>
+    <p-table [columns]="cols" [value]="products" #dt2  showGridlines>
+        <ng-template #header let-columns>
+            <tr>
+                <th *ngFor="let col of columns" [ngClass]="" pSortableColumn="{{col.field}}" >
+                    {{ col.header }}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template #body let-rowData let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns" 
+                [ngClass]="[ (col.field === 'code') ? 'text-blue-800 cursor-pointer' : '' ]"
+                (click)="onCellClick(rowData, columns)">
+                    {{ rowData[col.field] }}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</p-dialog>
+

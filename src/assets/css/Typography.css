@@ -1,0 +1,91 @@
+.Text_Primary{
+  color: #272B30;
+}
+.Text_Secondary{
+  color: #7E8083;
+}
+.Text_Disabled{
+  color: #B3B9C0;
+}
+.Text_Main{
+  color: #12558d !important;
+}
+.Text_Error{
+  color: #DC2020;
+}
+
+
+h1{
+    font-size: 96px;
+    font-weight: 400;
+  }
+  h2{
+    font-size: 60px;
+    font-weight: 400;
+  }
+  h3{
+    font-size: 48px;
+    font-weight: 400;
+  }
+  h4{
+    font-size: 34px;
+    font-weight: 600;
+  }
+  h5{
+    font-size: 24px;
+    font-weight: 400;
+  }
+  h6,.h6{
+    font-size: 20px ;
+    font-weight: 600;
+ 
+  }
+  
+  .Button_Small{
+    font-size: 13px;
+    line-height: 22;
+    font-weight: 500;
+  }
+  .Input_Label{
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+        letter-spacing: 0.15px;
+  
+  }
+  .Helper_Text{
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 400;
+        letter-spacing: 0.65px;
+  
+  }
+  .Input_Text{
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+        letter-spacing: 0.15px;
+  
+  }
+  .Avatar_Initials{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .Tooltip{
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .Alert_Title{
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .Table_Header{
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+        letter-spacing: 0.15px;
+  
+  }

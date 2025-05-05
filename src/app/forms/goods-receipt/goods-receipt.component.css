@@ -1,0 +1,17 @@
+.input-header-label{
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: #47556e;
+    margin-top: 4px;
+}
+.page-header-text{
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: #384762;
+}
